@@ -1,0 +1,9 @@
+cat
+at
+dog
+and
+tan
+on
+arr
+ace
+hex
