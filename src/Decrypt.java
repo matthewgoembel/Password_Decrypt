@@ -21,28 +21,25 @@ import java.util.Stack;
  * towards the front and the less frequently used characters in the back.
  */
 
-public class HW2 {
-   // Global, to store all the possible characters in the alphabet
+public class Decrypt {
+   // All the possible characters in the alphabet
    static final String letters = "eariotnslcudpbfghjkmqvwxyz";  // In order of frequency
-   // Global, to store the max length of the password
+   // Max length of the password
    static int maxLength;
 
    public static void main(String[] args) {
-      // Read file
       final String inputFileName = args[0];
-      // List to store all read file lines
       ArrayList<String> passwordList = new ArrayList<>();
       // Pass through file reader to read every line
       try (BufferedReader file = new BufferedReader(new FileReader(inputFileName))) {
          // Get tne first line length and store
          maxLength = Integer.parseInt(file.readLine());
-         // Stores each line of the input to be read
          String encryptedPassword;
          // For each line, call the decrypt method
          while ((encryptedPassword = file.readLine()) != null) {
             passwordList.add(encryptedPassword);
          }
-         // Uncomment and comment the method you would like to use
+         /** Uncomment/comment the method you would like to use */
          for (String p: passwordList) {
             //decrypt(p, "", 0);  // Uses recursion: Current line, unassigned password, length of unassigned pass.
             decryptStack(p);      // Uses stacks: Current line
