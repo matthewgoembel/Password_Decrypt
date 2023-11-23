@@ -1,12 +1,12 @@
 import java.util.Random;
 
 /**
- *   HW2crypto provides the encrypt method for encrypting a string
+ *   Crypto provides the encrypt method for encrypting a string
  *
  *   Usage:
- *   HW2crypto.encrypt(...)
+ *   Crypto.encrypt(...)
  */
-public class HW2crypto {
+public class Crypto {
     /**
      * This method creates an encrypted string of the word provided
      *
