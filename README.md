@@ -1,12 +1,2 @@
-Consider FBI has some suspects of cyber criminals and it would like to break into their online accounts to gather more
-evidence. Naturally, the accounts are password protected.
-
-The goal is to help FBI gain access to suspects’ online accounts. Desgin a “brute-force” algorithm that recursively 
-enumerates all possible strings. For simplicity, consider only lower-case letters and strings up to a certain
-maximum length. Crypto contains the encrypt(String) method that encrypts a string, Decrpyt contains the main method.
-
-Input: The command-line argument for HW2.java is the name of the input file, which has:
-  1. the maximum length of a password on the first line
-  2. encrypted password on each following line
-     
-Output: Each line contains the password before encryption
+#Password_Decrupt
+The Java program presented is designed to assist law enforcement, specifically the FBI, in decrypting passwords obtained during investigations. The program takes encrypted passwords as input from a file, encrypts possible combinations using a brute-force algorithm, and compares them to the provided encrypted passwords until a match is found. Two approaches are implemented: one uses recursion (decrypt method), and the other uses stacks (decryptStack method). The Crypto class handles the encryption, which employs a randomization process. The decrypt method systematically generates all possible password combinations, encrypts them, and checks for matches. Meanwhile, the decryptStack method uses stacks to explore potential passwords until a match is identified efficiently. This program demonstrates a strong understanding of cryptographic algorithms, recursion, and stack-based solutions, showcasing the author's proficiency in algorithmic problem-solving and programming techniques.
